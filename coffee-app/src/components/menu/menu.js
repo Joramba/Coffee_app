@@ -6,10 +6,10 @@ const Menu = ({ color, img }) => {
             <ul className='nav-list'>
                 <li className='nav-item'>
                     <img src={img} alt="Beans" className='nav-img'/>
-                    <a href="#!" className='nav-item-link' style={{ color: color }}>Coffee house</a>
+                    <a href="/" className='nav-item-link' style={{ color: color }}>Coffee house</a>
                 </li>
                 <li className='nav-item'>
-                    <a href="#!" className='nav-item-link' style={{ color: color }}>Our coffee</a>
+                    <a href="/our_coffee" className='nav-item-link' style={{ color: color }}>Our coffee</a>
                 </li>
                 <li className='nav-item'>
                     <a href="#!" className='nav-item-link'  style={{ color: color }}>For your pleasure</a>

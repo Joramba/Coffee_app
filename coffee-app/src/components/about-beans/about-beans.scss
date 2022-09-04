@@ -1,0 +1,36 @@
+.about-beans {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    &-title {
+        margin-bottom: 20px;
+    }
+    &-container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 346px;
+    }
+
+    &-text {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        height: 232px;
+    }
+}
