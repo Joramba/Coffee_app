@@ -1,0 +1,27 @@
+.about-us {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 101px;
+    
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        width: 589px;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        margin: 40px 0 0 0px;
+    }
+}

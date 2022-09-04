@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap:30px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    &-menu {
+        padding-top: 52px;
+        margin-bottom: 30pxs;
+    }
+}

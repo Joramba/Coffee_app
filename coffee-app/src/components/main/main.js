@@ -9,8 +9,8 @@ const Main = () => {
                 <div className="main-img-container">
                     <img src={Img} alt="Coffee beans" className="main-img" />
                 </div>
-                <p className="main-text">We makes every day full of energy and taste</p>
-                <p className="main-text">Want to try our beans?</p>
+                <h2 className="main-text">We makes every day full of energy and taste</h2>
+                <h2 className="main-text">Want to try our beans?</h2>
                 <button className="main-button">More</button>
             </div>
         </section>
