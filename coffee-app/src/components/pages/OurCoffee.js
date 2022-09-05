@@ -7,6 +7,10 @@ import AboutBeans from "../about-beans/about-beans";
 import Filters from "../filters/filters";
 import OurCoffeeCards from "../our-coffee-cards/our-coffee-cards";
 import Footer from "../footer/footer";
+import '../app/app.scss';
+
+import BgOurCoffee from '../../img/bg-OurCoffee.jpg';
+import AboutBeansImage from '../../img/AboutBeans.jpg';
 import Card3 from '../../img/card3.jpg';
 
 class OurCoffee extends Component {
@@ -29,8 +33,8 @@ class OurCoffee extends Component {
         return (
             <div className="app">
                 <Header />
-                <OurCoffeeMain />
-                <AboutBeans />
+                <OurCoffeeMain title="Our Coffee" img={BgOurCoffee} />
+                <AboutBeans about="About our beans" img={AboutBeansImage} />
                 <Filters />
                 <OurCoffeeCards img={Card3} data={data} />
                 <Footer />

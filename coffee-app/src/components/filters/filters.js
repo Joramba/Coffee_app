@@ -1,9 +1,11 @@
+import Line from '../line/line';
+
 import './filter.scss';
 
 const Filters = () => {
     return (
         <>
-            <div className="line"></div>
+            <Line />
             <section className="filters">
                 <div className="filters-container">
                     <div className="filters-input-text">

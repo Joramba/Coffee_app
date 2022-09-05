@@ -12,7 +12,7 @@ const Menu = ({ color, img }) => {
                     <a href="/our_coffee" className='nav-item-link' style={{ color: color }}>Our coffee</a>
                 </li>
                 <li className='nav-item'>
-                    <a href="#!" className='nav-item-link'  style={{ color: color }}>For your pleasure</a>
+                    <a href="/pleasure" className='nav-item-link'  style={{ color: color }}>For your pleasure</a>
                 </li>
             </ul>
         </nav>

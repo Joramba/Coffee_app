@@ -1,18 +1,18 @@
 import Title from '../title/title';
 
-import AboutBeansImage from '../../img/AboutBeans.jpg';
 import './about-beans.scss';
 
-const AboutBeans = () => {
+const AboutBeans = (props) => {
+    const { about, img } = props;
     return (
         <section className="about-beans">
             <div className="about-beans-container">
-                <img src={AboutBeansImage} alt="About Beans" />
+                <img src={img} alt="About Beans" />
                 <div className="about-beans-wrapper">
-                    <h2 className="about-beans-title">About our beans</h2>
+                    <h2 className="about-beans-title">{about}</h2>
                     <Title />
                     <div className="about-beans-text">
-                        Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. <br/> <br />
+                        Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. <br /> <br />
                         Afraid at highly months do things on at. Situation <br />recommend objection do intention<br />
                         so questions.<br />
                         As greatly removed calling pleased improve an.<br /> Last ask him cold feel<br />
