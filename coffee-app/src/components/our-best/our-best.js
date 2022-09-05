@@ -1,18 +1,21 @@
-import Card from '../card-main/card-main';
+import Card from '../card/card';
 import Card1 from '../../img/card1.jpg'
-import Card2 from '../../img/card2.jpg'
-import Card3 from '../../img/card3.jpg'
 
 import './our-best.scss';
 
-const OurBest = () => {
+const OurBest = ({ data }) => {
+    const elements = data.map(item => {
+        const { src, title, price, id } = item;
+        return (
+            <Card key={id} img={Object.values(src)} title={title} price={price} />
+        )
+    });
+
     return (
         <section className='our-best'>
             <h2 className='our-best-title'>Our best</h2>
             <div className="our-best-wrapper">
-                <Card img={Card1} title='Solimo Coffee Beans 2 kg' price='10.73' />
-                <Card img={Card2} title='Presto Coffee Beans 1 kg' price='15.99' />
-                <Card img={Card3} title='AROMISTICO Coffee 1 kg' price='6.99' />
+                {elements}
             </div>
         </section>
     )

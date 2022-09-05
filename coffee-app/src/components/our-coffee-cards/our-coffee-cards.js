@@ -1,11 +1,11 @@
-import CardOurCoffee from '../card-our-coffee/card-our-coffee';
+import Card from '../card/card';
 import './our-coffee-cards.scss';
 
-const OurCoffeeCards = ({ data, img }) => {
+const OurCoffeeCards = ({ data}) => {
     const elemets = data.map(item => {
-        const { title, country, price, id } = item;
+        const { title, country, price, id, src } = item;
         return (
-            <CardOurCoffee key={id} img={img} title={title} country={country} price={price} />
+            <Card key={id} img={Object.values(src)} title={title} country={country} price={price} />
         )
     })
 

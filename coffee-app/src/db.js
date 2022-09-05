@@ -1,47 +1,62 @@
 import { v4 as uuidv4 } from 'uuid';
+import Card1 from './img/card1.jpg';
+import Card2 from './img/card2.jpg';
+import Card3 from './img/card3.jpg';
 
 let data = [
     {
-        title: "AROMISTICO Coffee 1 kg",
+        src: { Card1 },
+        title: "Solimo Coffee Beans 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Brazil",
-        price: "6.99",
-        id: uuidv4()
+        price: "10.73",
+        id: uuidv4(),
+        favorites: true
     },
     {
-        title: "AROMISTICO Coffee 1 kg",
+        src: { Card2 },
+        title: "Presto Coffee Beans 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Kenia",
-        price: "6.99",
-        id: uuidv4()
+        price: "15.99",
+        id: uuidv4(),
+        favorites: true
     },
     {
+        src: { Card3 },
         title: "AROMISTICO Coffee 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Columbia",
         price: "6.99",
-        id: uuidv4()
+        id: uuidv4(),
+        favorites: true
     },
     {
+        src: { Card3 },
         title: "AROMISTICO Coffee 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Brazil",
         price: "6.99",
-        id: uuidv4()
+        id: uuidv4(),
+        favorites: false
     },
     {
+        src: { Card2 },
         title: "AROMISTICO Coffee 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Kenia",
         price: "6.99",
-        id: uuidv4()
+        id: uuidv4(),
+        favorites: false
     },
     {
+        src: { Card1 },
         title: "AROMISTICO Coffee 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Columbia",
         price: "6.99",
-        id: uuidv4()
+        id: uuidv4(),
+        favorites: false
     },
 
 ];
