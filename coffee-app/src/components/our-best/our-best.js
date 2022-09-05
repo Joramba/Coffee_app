@@ -1,4 +1,4 @@
-import Card from '../card/card';
+import Card from '../card-main/card-main';
 import Card1 from '../../img/card1.jpg'
 import Card2 from '../../img/card2.jpg'
 import Card3 from '../../img/card3.jpg'

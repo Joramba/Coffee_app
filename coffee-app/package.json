@@ -39,6 +39,7 @@
   "devDependencies": {
     "normalize-scss": "^7.0.1",
     "react-router-dom": "^6.3.0",
-    "sass": "^1.54.8"
+    "sass": "^1.54.8",
+    "uuidv4": "^6.2.13"
   }
 }

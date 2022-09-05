@@ -23,9 +23,8 @@ const AboutUs = () => {
                         repair day ladies now.</p>
                 </div>
             </div>
-
-
         </section >
+
     )
 }
 
