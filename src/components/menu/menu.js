@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './menu.scss'
 
 const Menu = ({ color, img }) => {
@@ -5,14 +6,14 @@ const Menu = ({ color, img }) => {
         <nav className='nav'>
             <ul className='nav-list'>
                 <li className='nav-item'>
-                    <img src={img} alt="Beans" className='nav-img'/>
-                    <a href="/" className='nav-item-link' style={{ color: color }}>Coffee house</a>
+                    <img src={img} alt="Beans" className='nav-img' />
+                    <Link to={'/Coffee_app/'} className='nav-item-link' style={{ color: color }}>Coffee house</Link>
                 </li>
                 <li className='nav-item'>
-                    <a href="/our_coffee" className='nav-item-link' style={{ color: color }}>Our coffee</a>
+                    <Link to={'/Coffee_app/our_coffee'} className='nav-item-link' style={{ color: color }}>Our coffee</Link>
                 </li>
                 <li className='nav-item'>
-                    <a href="/pleasure" className='nav-item-link'  style={{ color: color }}>For your pleasure</a>
+                    <Link to={'/Coffee_app/pleasure'} className='nav-item-link' style={{ color: color }}>For your pleasure</Link>
                 </li>
             </ul>
         </nav>

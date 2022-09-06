@@ -5,7 +5,7 @@ import './card.scss';
 const Card = ({ img, title, country, price, id }) => {
 
     return (
-        <Link to={`/${id}`} className="card-coffee">
+        <Link to={`/Coffee_app/${id}`} className="card-coffee">
             <div className="card">
                 <img src={img} alt="Img Card" className='card-img' />
                 <h3 className='card-title'>{title}</h3>

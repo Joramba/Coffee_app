@@ -12,7 +12,6 @@ import BgOurCoffee from '../../img/bg-OurCoffee.jpg';
 const SingleCoffeePage = () => {
     const { id } = useParams();
     const itemData = data.filter(item => item.id === id);
-
     return (
         <div className="app" >
             <Header />

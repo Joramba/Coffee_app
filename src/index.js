@@ -18,10 +18,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/our_coffee" element={<OurCoffee />} />
-      <Route path="/pleasure" element={<PleasurePage />} />
-      <Route path="/:id" element={<SingleCoffeePage />} />
+      <Route path="/Coffee_app/" element={<MainPage />} />
+      <Route path="/Coffee_app/our_coffee" element={<OurCoffee />} />
+      <Route path="/Coffee_app/pleasure" element={<PleasurePage />} />
+      <Route path="/Coffee_app/:id" element={<SingleCoffeePage />} />
     </Routes>
   </BrowserRouter>
 );
