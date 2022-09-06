@@ -1,5 +1,4 @@
 import Card from '../card/card';
-import Card1 from '../../img/card1.jpg'
 
 import './our-best.scss';
 
@@ -7,7 +6,7 @@ const OurBest = ({ data }) => {
     const elements = data.map(item => {
         const { src, title, price, id } = item;
         return (
-            <Card key={id} img={Object.values(src)} title={title} price={price} />
+            <Card key={id} id={id} img={Object.values(src)} title={title} price={price} />
         )
     });
 

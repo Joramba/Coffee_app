@@ -1,11 +1,19 @@
-.about-beans-text {
-    &>div {
-        margin-bottom: 16px;
-        text-align: start;
+.about-beans {
+    &-single {
+        width: 392px;
+        height: 355px;
+    }
 
-        &>span {
-            font-size: 24px;
-            line-height: 35px;
+    &-text {
+        &>div {
+            margin-bottom: 16px;
+            text-align: start;
+
+            &>span {
+                font-size: 24px;
+                line-height: 35px;
+            }
         }
     }
+
 }

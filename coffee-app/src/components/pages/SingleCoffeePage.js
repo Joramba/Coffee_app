@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useParams } from 'react-router-dom';
 
 import '../app/app.scss';
 import Header from "../header/header";
@@ -8,27 +8,19 @@ import Footer from '../footer/footer';
 import data from "../../db";
 
 import BgOurCoffee from '../../img/bg-OurCoffee.jpg';
-import AboutBeansImage from '../../img/img-singleCoffee.jpg';
 
+const SingleCoffeePage = () => {
+    const { id } = useParams();
+    const itemData = data.filter(item => item.id === id);
 
-class SingleCoffeePage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            data
-        };
-    }
-
-    render() {
-        return (
-            <div className="app" >
-                <Header />
-                <OurCoffeeMain title="Our Coffee" img={BgOurCoffee} />
-                <AboutBeans about="About it" img={AboutBeansImage} data={data} single={true} />
-                <Footer />
-            </div>
-        )
-    }
+    return (
+        <div className="app" >
+            <Header />
+            <OurCoffeeMain title="Our Coffee" img={BgOurCoffee} />
+            <AboutBeans about="About it" img={Object.values(itemData[0].src)} data={itemData[0]} single={true} />
+            <Footer />
+        </div>
+    )
 };
 
 export default SingleCoffeePage;

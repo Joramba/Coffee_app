@@ -17,10 +17,12 @@ const AboutBeans = (props) => {
         is song that held help face.
     </div>;
 
+    const image = single ? <img src={img} alt="About Beans" className='about-beans-single' /> : <img src={img} alt="About Beans" />;
+
     return (
         <section className="about-beans">
             <div className="about-beans-container">
-                <img src={img} alt="About Beans" />
+                {image}
                 <div className="about-beans-wrapper">
                     <h2 className="about-beans-title">{about}</h2>
                     <Title />

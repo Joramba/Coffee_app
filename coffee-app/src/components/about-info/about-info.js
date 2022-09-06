@@ -1,7 +1,7 @@
 import './about-info.scss';
 
 const AboutInfo = (props) => {
-    const { country, description, price } = props.data[0];
+    const { country, description, price } = props.data;
     return (
         <div className="about-beans-text">
             <div><b>Country:</b> {country}</div>

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import {
   BrowserRouter,
   Routes,
-  Route,
+  Route
 } from "react-router-dom";
 
 import './styles/index.scss'
@@ -12,6 +12,7 @@ import MainPage from './components/pages/MainPage';
 import OurCoffee from './components/pages/OurCoffee';
 import PleasurePage from './components/pages/PleasurePage';
 import SingleCoffeePage from './components/pages/SingleCoffeePage';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,4 +25,3 @@ root.render(
     </Routes>
   </BrowserRouter>
 );
-

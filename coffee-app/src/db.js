@@ -24,7 +24,7 @@ let data = [
     },
     {
         src: { Card3 },
-        title: "AROMISTICO Coffee 1 kg",
+        title: "Chock Full o' Nuts 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Columbia",
         price: "6.99",
@@ -36,25 +36,25 @@ let data = [
         title: "AROMISTICO Coffee 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Brazil",
-        price: "6.99",
+        price: "20.99",
         id: uuidv4(),
         favorites: false
     },
     {
         src: { Card2 },
-        title: "AROMISTICO Coffee 1 kg",
+        title: "Seattle's Best 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Kenia",
-        price: "6.99",
+        price: "15.99",
         id: uuidv4(),
         favorites: false
     },
     {
         src: { Card1 },
-        title: "AROMISTICO Coffee 1 kg",
+        title: "Whole Foods 365 Everyday Value 1 kg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         country: "Columbia",
-        price: "6.99",
+        price: "30.99",
         id: uuidv4(),
         favorites: false
     },

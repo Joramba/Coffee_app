@@ -27,7 +27,7 @@ class OurCoffee extends Component {
             <div className="app">
                 <Header />
                 <OurCoffeeMain title="Our Coffee" img={BgOurCoffee} />
-                <AboutBeans about="About our beans" img={AboutBeansImage} single={false} />
+                <AboutBeans about="About our beans" img={AboutBeansImage} data={data} single={false} />
                 <Filters />
                 <OurCoffeeCards img={Card3} data={data} />
                 <Footer />
