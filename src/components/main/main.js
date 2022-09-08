@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './main.scss';
 import Img from "../../img/svg/coffee-beans_2.svg"
 
@@ -11,7 +13,7 @@ const Main = () => {
                 </div>
                 <h2 className="main-text">We makes every day full of energy and taste</h2>
                 <h2 className="main-text">Want to try our beans?</h2>
-                <button className="main-button">More</button>
+                <button className="main-button"> <Link to={'/Coffee_app/our_coffee'} className='nav-item-link'>More</Link></button>
             </div>
         </section>
     )

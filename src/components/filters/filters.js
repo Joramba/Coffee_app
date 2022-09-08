@@ -2,7 +2,26 @@ import Line from '../line/line';
 
 import './filter.scss';
 
-const Filters = () => {
+const Filters = (props) => {
+    const btnClass = "filters-button";
+
+    const unActiveClass = () => {
+        document.querySelector('.filters-buttons').childNodes.forEach(item => {
+            item.className = btnClass;
+        })
+    }
+
+    const onFilter = (e) => {
+        const filter = e.target.name;
+        if (e.target.className == 'filters-button active') {
+            unActiveClass();
+        } else {
+            unActiveClass();
+            e.target.className = btnClass + " active";
+        }
+        props.onFilter(filter);
+    }
+
     return (
         <>
             <Line />
@@ -20,9 +39,24 @@ const Filters = () => {
                         Or filter
                     </div>
                     <div className="filters-buttons">
-                        <button className='filters-button'>Brazil</button>
-                        <button className='filters-button'>Kenya</button>
-                        <button className='filters-button'>Columbia</button>
+                        <button
+                            className="filters-button"
+                            name='Brazil'
+                            onClick={onFilter}>
+                            Brazil
+                        </button>
+                        <button
+                            className='filters-button'
+                            name='Kenia'
+                            onClick={onFilter}>
+                            Kenya
+                        </button>
+                        <button
+                            className='filters-button'
+                            name='Columbia'
+                            onClick={onFilter}>
+                            Columbia
+                        </button>
                     </div>
                 </div>
             </section>

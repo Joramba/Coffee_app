@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 83px;
     margin-bottom: 61px;
-    
+
     &-input {
         display: flex;
         justify-content: center;
@@ -52,7 +52,7 @@
         line-height: 17px;
         text-align: center;
         color: #000000;
-        border: 0;
+        border: none;
     }
 
     &-button:hover {
@@ -66,4 +66,8 @@
         align-items: center;
         gap: 20px;
     }
+}
+
+.active {
+    border: 1px solid black;
 }
