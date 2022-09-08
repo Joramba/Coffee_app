@@ -35,9 +35,13 @@ class OurCoffee extends Component {
         }
     }
 
-    // onUpdateSearch = (term) => {
-    //     this.setState({ term });
-    // }
+    termData = (data, term) => {
+        return data.filter(item => item.title.toLowerCase().indexOf(term.toLowerCase()) > -1);
+    }
+
+    onUpdateSearch = (term) => {
+        this.setState({ term });
+    }
 
     onFilter = (filter) => {
         if (this.state.filter === filter) {
@@ -49,15 +53,17 @@ class OurCoffee extends Component {
 
     render() {
         const { data, filter, term } = this.state;
-        const filterdData = this.filterData(data, filter);
-        console.log(filterdData);
+        const filtereddData = this.filterData(data, filter);
+        const termFilteredData = this.termData(filtereddData, term);
+
+        console.log(filtereddData);
         return (
             <div className="app">
                 <Header />
                 <OurCoffeeMain title="Our Coffee" img={BgOurCoffee} />
                 <AboutBeans about="About our beans" img={AboutBeansImage} data={data} single={false} />
-                <Filters onFilter={this.onFilter} />
-                <OurCoffeeCards data={filterdData} />
+                <Filters onFilter={this.onFilter} onUpdateSearch={this.onUpdateSearch} />
+                <OurCoffeeCards data={termFilteredData} />
                 <Footer />
             </div>
         )

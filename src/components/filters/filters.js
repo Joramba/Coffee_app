@@ -13,13 +13,18 @@ const Filters = (props) => {
 
     const onFilter = (e) => {
         const filter = e.target.name;
-        if (e.target.className == 'filters-button active') {
+        if (e.target.className === 'filters-button active') {
             unActiveClass();
         } else {
             unActiveClass();
             e.target.className = btnClass + " active";
         }
         props.onFilter(filter);
+    }
+
+    const onUpdateSearch = (e) => {
+        const term = e.target.value;
+        props.onUpdateSearch(term);
     }
 
     return (
@@ -31,7 +36,7 @@ const Filters = (props) => {
                         Lookiing for
                     </div>
                     <div className="filters-input">
-                        <input type="text" placeholder='start typing here...' />
+                        <input type="text" placeholder='start typing here...' onChange={onUpdateSearch} />
                     </div>
                 </div>
                 <div className="filters-container">
